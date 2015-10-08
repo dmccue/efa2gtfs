@@ -19,7 +19,7 @@ elem_next = driver.find_element_by_xpath('//input[contains(@title, "Next Page")]
 
 while elem_next and not elem_next.get_attribute('onclick'):
     elem_next.click()
-    time.sleep(2)
+    time.sleep(5)
     print_urls()
     elem_next = driver.find_element_by_xpath('//input[contains(@title, "Next Page")]')
 
