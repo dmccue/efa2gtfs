@@ -1,57 +1,63 @@
 #!/usr/bin/python
 
 import xml.etree.ElementTree as ET
-import requests
-
-import pygmaps
-mymap = pygmaps.maps(54.5825668303, -5.93652799127, 14)
-mymap.setgrids(54.59, 54.58, 0.001, -5.94, -5.93, 0.001)
-#mymap.addpoint(37.427, -122.145, "#0000FF")
-#mymap.addradpoint(37.429, -122.145, 95, "#FF0000")
-#path = [(37.429, -122.145),(37.428, -122.145),(37.427, -122.145),(37.427, -122.146),(37.427, -122.146)]
-#mymap.addpath(path,"#00FF00")
+import requests, sys
 
 
-
+if len(sys.argv) < 3:
+    print "Please provide a start and end id as arg1/arg2"
+    sys.exit(1)
 
 DEBUG = 0
-#ITMR
-payload = {
-    'language': 'en',
-    'coordOutputFormat': 'WGS84',
-    'locationServerActive': '1',
-    'stateless': '1',
-    'type_sf': 'any',
-    'name_sf': 'stranmillis'
-}
-response = requests.get('http://journeyplanner.translink.co.uk/android/XML_STOPFINDER_REQUEST', params=payload).text
 
-root = ET.fromstring(response)
+errorcount = 0
+incrementer = sys.argv[0]
+while incrementer < sys.argv[1]:
+  try:
+    incrementer = incrementer + 1
+    payload = {
+        'language': 'en',
+        'coordOutputFormat': 'WGS84',
+        'locationServerActive': '1',
+        'stateless': '1',
+        'type_sf': 'any',
+        'name_sf': str(incrementer)
+    }
+    response = requests.get('http://journeyplanner.translink.co.uk/android/XML_STOPFINDER_REQUEST', params=payload).text.encode('utf-8')
 
-for child in root.iter('p'):
-  if DEBUG: print ET.dump(child)
-  rec_name = child[0].text
-  rec_uuu = child[1].text
-  rec_type = child[2].text
-  rec_id = child[3][0].text
-  rec_stateless = child[3][1].text
-  rec_omc = child[3][2].text
-  rec_pc = child[3][3].text
-  rec_pid = child[3][4].text
-  rec_c = child[3][5].text
+    root = ET.fromstring(response)
 
-  #Format location
-  (lon,lat) = rec_c.split(',')
-  lat = float(lat) / 1000000.0
-  lon = float(lon) / 1000000.0
-  mymap.addpoint(lat, lon, "#FF0000")
-
-  rec_qal = child[4].text
-  print rec_name+':'+rec_uuu+':'+rec_type+':'+rec_id+':'+rec_stateless+':'+rec_omc+':'+rec_pc+':'+rec_pid+':'+rec_c+':'+rec_qal
-  print "lat,lon: " + str(lat) + ' ' + str(lon)
+    #for child in root.iter('p'):
+    sub_sf = root.find('sf')
+    sub_p = sub_sf.find('p')
+    #if DEBUG: print ET.dump(child)
+    rec_name = sub_p.find('n').text
+    #   rec_uuu = child[1].text
+    #   rec_type = child.find('ty').text
+    sub_r = sub_p.find('r')
+    #   rec_id = child[3][0].text
+    #   rec_stateless = child.find('stateless').text
+    #   rec_omc = child[3][2].text
+    #   rec_pc = child[3][3].text
+    #   rec_pid = child[3][4].text
+    rec_c = sub_r.find('c').text
+    #   #rec_qal = child[4].text
 
 
-mymap.draw('./mymap.draw.html')
+    #Format location
+    (lon,lat) = rec_c.split(',')
+    lat = float(lat) / 1000000.0
+    lon = float(lon) / 1000000.0
+
+
+    #print rec_name+':'+rec_uuu+':'+rec_type+':'+rec_id+':'+rec_stateless+':'+rec_omc+':'+rec_pc+':'+rec_pid+':'+rec_c+':'+rec_qal
+    print str(incrementer) + ':' + rec_name + ':' + str(lat) + ':' + str(lon)
+
+  except:
+    errorcount = errorcount + 1
+    next
+
+
 
 
 #http://journeyplanner.translink.co.uk/android/XML_TRIP_REQUEST2?
@@ -91,3 +97,13 @@ mymap.draw('./mymap.draw.html')
 # stateless=1&
 # name_sf=castlereagh&
 # type_sf=any&
+
+# http://journeyplanner.translink.co.uk/android/XML_COORD_REQUEST?
+# language=en&
+# coord=736626.0%3A127825.0%3AITMR%3A&
+# coordListOutputFormat=STRING&
+# max=5&
+# inclFilter=1&
+# coordOutputFormat=ITMR&
+# type_1=STOP&
+# radius_1=1000
