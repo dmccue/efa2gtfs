@@ -5,7 +5,8 @@ import requests, sys, json
 places = set()
 errorcount = 0
 
-def show_help:
+
+def show_help():
     print "Please provide a start and end id as arg1/arg2"
     sys.exit(1)
 
@@ -40,20 +41,24 @@ def get_stopid(id):
 
     places.add((rec_placeid, rec_place))
     #stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_station
-    return rec_id + ',' + rec_name + ',' + '' + rec_coords[1] + ',' + rec_coords[0] + ',' + '' + ',' + '' + ',' + ''
+    return rec_id + ',"' + rec_name + '",' + '' + ',' + rec_coords[1] + ',' + rec_coords[0] + ',' + '' + ',' + '' + ',' + ''
 
 def write_places(input_arr):
     with open('GTFS/places.txt', 'a') as f:
         for place in input_arr:
             f.write(str(place[0]) + ',' + str(place[1]) + '\n')
 
-while incrementer < int(sys.argv[2]):
+incrementer = int(sys.argv[1])
+incrementer_limit = int(sys.argv[2])
+while incrementer < incrementer_limit:
   try:
     line = get_stopid(incrementer)
+    print line
     incrementer = incrementer + 1
 
   except:
     errorcount = errorcount + 1
+    incrementer = incrementer + 1
     print >> sys.stderr, "Error: " + str(incrementer)
     next
 
