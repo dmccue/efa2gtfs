@@ -16,6 +16,9 @@ if len(sys.argv) < 3:
 if not int(sys.argv[1]) or not int(sys.argv[2]):
     show_help()
 
+incrementer = int(sys.argv[1])
+incrementer_limit = int(sys.argv[2])
+
 def get_stopid(id):
     payload = {
         'language': 'en',
@@ -48,8 +51,7 @@ def write_places(input_arr):
         for place in input_arr:
             f.write(str(place[0]) + ',' + str(place[1]) + '\n')
 
-incrementer = int(sys.argv[1])
-incrementer_limit = int(sys.argv[2])
+
 while incrementer < incrementer_limit:
   try:
     line = get_stopid(incrementer)
@@ -63,3 +65,4 @@ while incrementer < incrementer_limit:
     next
 
 write_places(places)
+print 'Encountered ' + str(errorcount) + ' errors'

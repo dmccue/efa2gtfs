@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 
-import requests, sys, json, csv
+import requests, sys, json, csv, os
 
 
 header = [
@@ -15,10 +15,11 @@ header = [
   'route_color',
   'route_text_color'
 ]
+routes = set()
 
 
 def get_routesatstopid(input_id):
-  routes = []
+  out_routes = []
 
   payload = {
     'locationServerActive': '1',
@@ -73,28 +74,26 @@ def get_routesatstopid(input_id):
       '',
       ''
     ]
-    routes.append(row)
-  return routes
-
-
-def write_headertofile(in_csvwrite, in_header):
-  in_csvwrite.writerow(in_header)
-
-
-def write_rowstofile(in_csvwrite, in_rows):
-  for row in in_rows:
-    in_csvwrite.writerow(row)
+    out_routes.append(row)
+  return out_routes
 
 
 # Main
+with open('GTFS/stops.txt', 'rb') as f:
+  for row in csv.reader(f, delimiter=',', quotechar='"'):
+    stop_id = str(row[0])
+    if stop_id == 'stop_id': next
+    returned_routes = get_routesatstopid(stop_id)
+    for returned_route in returned_routes:
+      routes.add(tuple(returned_route))
+    os.system('clear')
+    print "Getting routes at stop: " + stop_id
+    print "Found " + str(len(returned_routes)) + " new routes, total: " + str(len(routes))
+
+# Write routes to file
+print "Writing routes to routes.txt..."
 with open('GTFS/routes.txt', 'wb') as f:
   csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-  write_headertofile(csvwrite)
-
-  with open('GTFS/stops.txt', 'rb') as csvfile:
-    for row in csv.reader(csvfile, delimiter=',', quotechar='"'):
-      stopid = str(row[0])
-      print "Getting routes at stop: " + stopid
-      returned_routes = get_routesatstopid(stopid)
-      print "Found " + str(len(returned_routes)) + " routes"
-      write_rowstofile(csvwrite, returned_routes)
+  csvwrite.writerow(header)
+  for route in routes:
+    csvwrite.writerow(route)
