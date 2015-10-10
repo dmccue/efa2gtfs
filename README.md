@@ -1,4 +1,4 @@
-# translink
+# efa2gtfs
 
 
 ### Description
@@ -11,10 +11,10 @@ Their product known as Elektronische Fahrplanauskunft (EFA) provides an XML/JSON
 https://de.wikipedia.org/wiki/Elektronische_Fahrplanauskunft
 https://www.mentzdv.de
 
-It is very similar to the format used by the Transport for London (TfL) API documentation: 
+It is very similar to the format used by the Transport for London (TfL) API documentation:
 http://content.tfl.gov.uk/journey-planner-api-documentation.pdf
 
-GTFS is the open General Transit Feed Specification, commonly used by google maps: 
+GTFS is the open General Transit Feed Specification, commonly used by google maps:
 https://github.com/google/transitfeed/wiki
 
 Please feel free to contribute, accepting pull requests
