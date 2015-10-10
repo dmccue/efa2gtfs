@@ -1,2 +1,2 @@
 agency_id, agency_name,agency_url,agency_timezone,agency_phone,agency_lang
-TranslinkNI,Translink Northern Ireland,http://www.translink.co.uk,Europe/Belfast,+44 (0) 2890 666630,en
+,Translink Northern Ireland,http://www.translink.co.uk,Europe/Belfast,+44 (0) 2890 666630,en
