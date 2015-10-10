@@ -3,7 +3,15 @@
 
 ### Description
 
-This is a project to enable GTFS from publicly available data
+This is a project to extract GTFS data from MDV EFA
+MDV (Mentz Datenverarbeitung) is a german software company that makes transport and timetable software
+Their product known as Elektronische Fahrplanauskunft (EFA) provides an XML/JSON based API
+https://de.wikipedia.org/wiki/Elektronische_Fahrplanauskunft
+https://www.mentzdv.de
+
+It is very similar to the format used by the Transport for London (TfL) API documentation: http://content.tfl.gov.uk/journey-planner-api-documentation.pdf
+
+GTFS is the open General Transit Feed Specification
 https://github.com/google/transitfeed/wiki
 
 Please feel free to contribute, accepting pull requests
@@ -26,8 +34,8 @@ From: https://developers.google.com/transit/gtfs/reference
 | stops.txt | y | Complete |
 | routes.txt | y | Complete |
 | trips.txt | y | In progress |
-| stop_times.txt | y |  |
-| calendar.txt | y |  |
+| stop_times.txt | y | todo |
+| calendar.txt | y | todo |
 | calendar_dates.txt | n |  |
 | fare_attributes.txt | n |  |
 | fare_rules.txt | n |  |
