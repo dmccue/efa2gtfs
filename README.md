@@ -21,6 +21,11 @@ Please feel free to contribute, accepting pull requests
 
 This project is in no way affiliated with any of the companies or products mentioned
 
+### Related projects
+
+EFA was previously known as diva and some projects exist for converting the previous format to gtfs
+https://github.com/stkdiretto/diva2gtfs
+
 ### How to run
 
 1. ./get_stops.py 10000000 10013000
