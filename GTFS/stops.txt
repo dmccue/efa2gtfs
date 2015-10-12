@@ -1,3 +1,4 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_station
 10000001,"Antrim, Antrim Train Station",,54.7182408441,-6.21189080362,,,
 10000002,"Gransha (Islandmagee), Ballycarry Train Station",,54.777270646,-5.72568089846,,,
 10000003,"Ballymena, Ballymena Train Station",,54.8638039051,-6.28443934742,,,
@@ -8488,7 +8489,8 @@
 10011523,"Strandtown, Clonallon Square",,54.5998476239,-5.8716017693,,,
 10011524,"Strandtown, Clonlee Drive",,54.5961916779,-5.87784429622,,,
 10011525,"Strandtown, Cypress Gardens",,54.5952873764,-5.8754768637,,,
-10011526,"Strandtown, Edenville Crescent, Belfast BT4 34 ft W",,54.5999338609,-5.87292847685,,,
+10011526,"Strandtown, ""Edenville Crescent
+Belfast BT4 34 ft W """,,54.5999338609,-5.87292847685,,,
 10011527,"Strandtown, Gelstons Corner",,54.600310591,-5.87646906833,,,
 10011528,"Strandtown, North Road",,54.5960458998,-5.87670653225,,,
 10011529,"Strandtown, Park Avenue",,54.6010769701,-5.87814740285,,,
@@ -9270,3 +9272,4 @@
 10012489,"Botanic, Great Victoria Street Naval Club",,54.5922726076,-5.93441221336,,,
 10012490,"Templepatrick, Ballymartin Park and Ride",,54.7104017375,-6.0665458248,,,
 10012492,"Belfast City Centre, College Square East",,54.5960998559,-5.93486850185,,,
+10012493,"Ballyhalbert, Corner",,54.4928396511,-5.46549266948,,,

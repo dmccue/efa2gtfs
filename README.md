@@ -26,12 +26,18 @@ This project is in no way affiliated with any of the companies or products menti
 EFA was previously known as diva and some projects exist for converting the previous format to gtfs
 https://github.com/stkdiretto/diva2gtfs
 
+OpenEFA has some documentation relating to the API
+https://code.google.com/p/openefa
+
+Golang client for EFA
+https://github.com/michiwend/goefa
+
 ### How to run
 
 1. ./get_stops.py 10000000 10013000
 2. ./get_routes.py
 3. [todo]
-
+4.
 
 ### Progress
 
@@ -52,3 +58,5 @@ From: https://developers.google.com/transit/gtfs/reference
 | frequencies.txt | n |  |
 | transfers.txt | n |  |
 | feed_info.txt | n |  |
+
+Planning to migrate to using the pygtfs python library

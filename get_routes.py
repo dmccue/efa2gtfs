@@ -16,13 +16,14 @@ header = [
   'route_text_color'
 ]
 routes = set()
-
+destinations = set()
 
 def get_routesatstopid(input_id):
   out_routes = []
 
   payload = {
     'locationServerActive': '1',
+    'googleAnalytics': 'false',
     'type_dm': 'stop',
     'limit': '999999',
     'outputFormat': 'JSON',
@@ -54,7 +55,7 @@ def get_routesatstopid(input_id):
   response = requests.get('http://journeyplanner.translink.co.uk/android/XML_DM_REQUEST', params=payload).text.encode('utf-8')
   root = json.loads(response)
 
-  # print json.dumps(root['servingLines']['lines'], sort_keys = False, indent = 2)
+  print json.dumps(root['servingLines']['lines'], sort_keys = False, indent = 2)
 
   if not root['servingLines']['lines']:
     return []
@@ -75,6 +76,7 @@ def get_routesatstopid(input_id):
       ''
     ]
     out_routes.append(row)
+    destinations.add((line['mode']['diva']['stateless'],line['mode']['destID']))
   return out_routes
 
 
@@ -86,14 +88,21 @@ with open('GTFS/stops.txt', 'rb') as f:
     returned_routes = get_routesatstopid(stop_id)
     for returned_route in returned_routes:
       routes.add(tuple(returned_route))
-    os.system('clear')
+    #os.system('clear')
     print "Getting routes at stop: " + stop_id
     print "Found " + str(len(returned_routes)) + " new routes, total: " + str(len(routes))
+    #break
 
 # Write routes to file
 print "Writing routes to routes.txt..."
 with open('GTFS/routes.txt', 'wb') as f:
   csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
   csvwrite.writerow(header)
-  for route in routes:
-    csvwrite.writerow(route)
+  for row in routes:
+    csvwrite.writerow(row)
+
+# Write destinations to file
+with open('GTFS/_dest.txt', 'wb') as f:
+  csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+  for row in destinations:
+    csvwrite.writerow(row)
