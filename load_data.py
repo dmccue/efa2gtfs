@@ -1,6 +1,6 @@
 #!/usr/bin/python
-import sqlite3, sys, requests, json
-baseurl = 'http://journeyplanner.translink.co.uk/android/'
+import ConfigParser, sqlite3, sys, requests, json
+
 
 def show_help():
     print "Please provide a start and end id as arg1/arg2 to recreate db"
@@ -56,7 +56,7 @@ def init_db():
     db.commit()
 
 
-def get_route(id):
+def get_route(baseurl,id):
 
     payload = {
         'locationServerActive': '1',
@@ -177,13 +177,15 @@ def process_routepath(root):
 
 
 # Main
-db = sqlite3.connect('data/db.db')
+Config = ConfigParser.ConfigParser()
+Config.read('config.ini')
+db = sqlite3.connect(Config.get('default','DatabaseFile'))
 init_db()
 incrementer = int(sys.argv[1])
 incrementer_limit = int(sys.argv[2])
 
 for i in range(incrementer, incrementer_limit):
-    routes = get_route(i)
+    routes = get_route(Config.get('default','BaseURL'), i)
     try:
         #print "Trying " + str(i)
         test = routes['dm']['points']['point']['ref']['coords']
