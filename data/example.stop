@@ -1,0 +1,36 @@
+10003776 {
+  "stopFinder": {
+    "input": {
+      "input": "10003776"
+    }, 
+    "points": {
+      "point": {
+        "usage": "sf", 
+        "stateless": "10003776", 
+        "ref": {
+          "omc": "31400030", 
+          "coords": "-5886656.51477,54583835.91298", 
+          "place": "Castlereagh", 
+          "id": "10003776", 
+          "placeID": "224"
+        }, 
+        "type": "stop", 
+        "name": "Castlereagh, Orby Place"
+      }
+    }
+  }, 
+  "parameters": [
+    {
+      "name": "serverID", 
+      "value": "EFA02_"
+    }, 
+    {
+      "name": "requestID", 
+      "value": "0"
+    }, 
+    {
+      "name": "sessionID", 
+      "value": "0"
+    }
+  ]
+}

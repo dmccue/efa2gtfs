@@ -24,18 +24,18 @@ payload = {
     'depType': 'stopEvents',
     'useProxFootSearch': '0',
     'useAllStops': '1',
-    'appCache': 'true',
     'mode': 'direct',
     'includeCompleteStopSeq': '1',
-    'locationServerActive': '1',
     'useRealtime': '0',
-    'type_dm': 'stop',
-    'limit': '999999',
-    'outputFormat': 'JSON',
-    'coordOutputFormat': 'WGS84',
-    'language': 'en',
-    'googleAnalytics': 'false',
-    'name_dm': '10003969'
+    #'appCache': 'true',
+    #'locationServerActive': '1',
+    #'type_dm': 'stop',
+    #'limit': '999999',
+    #'outputFormat': 'JSON',
+    #'coordOutputFormat': 'WGS84',
+    #'language': 'en',
+    #'googleAnalytics': 'false',
+    #'name_dm': '10003969'
 }
 
 response = requests.get('http://journeyplanner.translink.co.uk/android/XML_DM_REQUEST', params=payload).text.encode('utf-8')

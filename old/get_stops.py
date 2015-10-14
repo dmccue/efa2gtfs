@@ -43,6 +43,7 @@ def get_stopid(id):
     response = requests.get('http://journeyplanner.translink.co.uk/android/XML_STOPFINDER_REQUEST', params=payload).text.encode('utf-8')
 
     root = json.loads(response)
+    #print json.dumps(root, sort_keys = False, indent = 2)
 
     rec_coords =        root['stopFinder']['points']['point']['ref']['coords'].split(',')
     rec_coords[0] =     str(float(rec_coords[0]) / 1000000.0)
@@ -66,20 +67,20 @@ def get_stopid(id):
 
 
 with open('GTFS/stops.txt', 'wb') as f:
-    csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    csvwrite.writerow(header)
-    while incrementer < incrementer_limit:
-      try:
-        csvwrite.writerow(get_stopid(incrementer))
-      except:
-        errorcount += 1
-        print >> sys.stderr, "Error: " + str(incrementer)
-      incrementer += 1
+   csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+   csvwrite.writerow(header)
+   while incrementer < incrementer_limit:
+     try:
+       csvwrite.writerow(get_stopid(incrementer))
+     except:
+       errorcount += 1
+       print >> sys.stderr, "Error: " + str(incrementer)
+     incrementer += 1
 
 
-with open('GTFS/places.txt', 'a') as f:
-    csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    for place in places:
-        csvwrite.writerow(place)
+with open('GTFS/_places.txt', 'a') as f:
+   csvwrite = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+   for place in places:
+       csvwrite.writerow(place)
 
 print 'Encountered ' + str(errorcount) + ' errors'

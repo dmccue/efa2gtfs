@@ -275,7 +275,6 @@ stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_stat
 10001108,"Allistragh, Drumsill Hotel",,54.3751996787,-6.6731335891,,,
 10001109,"Allistragh, Kearneys House",,54.3625797914,-6.68845100154,,,
 10001110,"Allistragh, Kinnego Crossroads",,54.4085812198,-6.66643317939,,,
-10001111,"Allistragh, Kinnego Crossroads",,54.4088007199,-6.66678036953,,,
 10001112,"Allistragh, McCready's Corner",,54.3902385163,-6.67032327709,,,
 10001113,"Tullysaran, Todds Corner",,54.3748779884,-6.69972627453,,,
 10001114,"Allistragh, Trainors Corner",,54.4129700155,-6.66838601665,,,

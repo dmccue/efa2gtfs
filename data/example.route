@@ -1,0 +1,461 @@
+10003776 {
+  "departureList": null, 
+  "arr": {
+    "input": {
+      "input": ""
+    }, 
+    "points": null
+  }, 
+  "dm": {
+    "input": {
+      "input": "10003776"
+    }, 
+    "points": {
+      "point": {
+        "usage": "dm", 
+        "stateless": "10003776", 
+        "ref": {
+          "omc": "31400030", 
+          "coords": "-5886656.51477,54583835.91298", 
+          "place": "Castlereagh", 
+          "id": "10003776", 
+          "placeID": "224"
+        }, 
+        "type": "stop", 
+        "name": "Castlereagh, Orby Place"
+      }
+    }
+  }, 
+  "option": {
+    "ptOption": {
+      "noSolidStairs": "0", 
+      "activeImp": "-1", 
+      "activeCom": "-1", 
+      "changeSpeed": "normal", 
+      "activeSec": "-1", 
+      "useProxFootSearch": "0", 
+      "excludedMeans": [
+        {
+          "selected": "0", 
+          "value": "0", 
+          "means": "Train"
+        }, 
+        {
+          "selected": "0", 
+          "value": "1", 
+          "means": "Commuter railway"
+        }, 
+        {
+          "selected": "0", 
+          "value": "2", 
+          "means": "Subway"
+        }, 
+        {
+          "selected": "0", 
+          "value": "3", 
+          "means": "City rail"
+        }, 
+        {
+          "selected": "0", 
+          "value": "4", 
+          "means": "Tram"
+        }, 
+        {
+          "selected": "0", 
+          "value": "5", 
+          "means": "Bus"
+        }, 
+        {
+          "selected": "0", 
+          "value": "6", 
+          "means": "Regional bus"
+        }, 
+        {
+          "selected": "0", 
+          "value": "7", 
+          "means": "Coach"
+        }, 
+        {
+          "selected": "0", 
+          "value": "8", 
+          "means": "Cable car/Rack railw"
+        }, 
+        {
+          "selected": "0", 
+          "value": "9", 
+          "means": "Ferry"
+        }, 
+        {
+          "selected": "0", 
+          "value": "10", 
+          "means": "Taxi on demand"
+        }, 
+        {
+          "selected": "0", 
+          "value": "11", 
+          "means": "Other"
+        }, 
+        {
+          "selected": "0", 
+          "value": "12", 
+          "means": "Airplane"
+        }, 
+        {
+          "selected": "0", 
+          "value": "13", 
+          "means": "Train (local)"
+        }, 
+        {
+          "selected": "0", 
+          "value": "14", 
+          "means": "Train (intercity)"
+        }, 
+        {
+          "selected": "0", 
+          "value": "15", 
+          "means": "Train (intercity wit"
+        }, 
+        {
+          "selected": "0", 
+          "value": "16", 
+          "means": "Train (intercity wit"
+        }, 
+        {
+          "selected": "0", 
+          "value": "17", 
+          "means": "Rail replacement ser"
+        }, 
+        {
+          "selected": "0", 
+          "value": "18", 
+          "means": "Rail shuttle"
+        }, 
+        {
+          "selected": "0", 
+          "value": "19", 
+          "means": "Citizen bus"
+        }
+      ], 
+      "noCrowded": "0", 
+      "lowPlatformVhcl": "0", 
+      "assistance": "0", 
+      "bike": "0", 
+      "noLonelyTransfer": "0", 
+      "SOSAvail": "0", 
+      "routeType": "LEASTTIME", 
+      "noInsecurePlaces": "0", 
+      "maxChanges": "9", 
+      "useProxFootSearchOrigin": "0", 
+      "lineRestriction": "400", 
+      "plane": "0", 
+      "active": "-1", 
+      "needElevatedPlt": "0", 
+      "maxTime": "360", 
+      "noEscalators": "0", 
+      "useProxFootSearchDestination": "0", 
+      "maxWait": "120", 
+      "wheelchair": "0", 
+      "privateTransport": "0", 
+      "noElevators": "0", 
+      "illumTransfer": "0"
+    }
+  }, 
+  "parameters": [
+    {
+      "name": "requestID", 
+      "value": "0"
+    }, 
+    {
+      "name": "sessionID", 
+      "value": "0"
+    }
+  ], 
+  "dateRange": [
+    {
+      "year": "2015", 
+      "day": "13", 
+      "weekday": "3", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "14", 
+      "weekday": "4", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "15", 
+      "weekday": "5", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "16", 
+      "weekday": "6", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "17", 
+      "weekday": "7", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "18", 
+      "weekday": "1", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "19", 
+      "weekday": "2", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "20", 
+      "weekday": "3", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "21", 
+      "weekday": "4", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "22", 
+      "weekday": "5", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "23", 
+      "weekday": "6", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "24", 
+      "weekday": "7", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "25", 
+      "weekday": "1", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "26", 
+      "weekday": "2", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "27", 
+      "weekday": "3", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "28", 
+      "weekday": "4", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "29", 
+      "weekday": "5", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "30", 
+      "weekday": "6", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "31", 
+      "weekday": "7", 
+      "month": "10"
+    }, 
+    {
+      "year": "2015", 
+      "day": "01", 
+      "weekday": "1", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "02", 
+      "weekday": "2", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "03", 
+      "weekday": "3", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "04", 
+      "weekday": "4", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "05", 
+      "weekday": "5", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "06", 
+      "weekday": "6", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "07", 
+      "weekday": "7", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "08", 
+      "weekday": "1", 
+      "month": "11"
+    }, 
+    {
+      "year": "2015", 
+      "day": "09", 
+      "weekday": "2", 
+      "month": "11"
+    }
+  ], 
+  "dateTime": {
+    "deparr": "dep", 
+    "hour": "22", 
+    "ttpTo": "20160831", 
+    "month": "10", 
+    "year": "2015", 
+    "ttpFrom": "20150901", 
+    "day": "13", 
+    "minute": "48"
+  }, 
+  "servingLines": {
+    "lines": [
+      {
+        "index": "5:0", 
+        "mode": {
+          "timetablePeriod": "01/09/2015 - 31/08/2016", 
+          "product": "Bus", 
+          "code": "3", 
+          "name": "Bus 12", 
+          "destination": "Ballygowan, Square", 
+          "number": "12", 
+          "diva": {
+            "stateless": "nir:13001:2:H:y14", 
+            "network": "nir", 
+            "project": "y14", 
+            "supplement": "2", 
+            "opCode": "ULB", 
+            "attrs": [], 
+            "branch": "13", 
+            "operator": "Ulsterbus", 
+            "line": "13001", 
+            "dir": "H"
+          }, 
+          "desc": "Belfast - Ballygowan - Raffrey", 
+          "type": "5", 
+          "destID": "10002003"
+        }
+      }, 
+      {
+        "index": "5:1", 
+        "mode": {
+          "timetablePeriod": "01/09/2015 - 30/06/2016", 
+          "product": "Bus", 
+          "code": "3", 
+          "name": "Bus 31", 
+          "destination": "Galwally, Forestside", 
+          "number": "31", 
+          "diva": {
+            "stateless": "nir:15031: :H:mtt", 
+            "network": "nir", 
+            "project": "mtt", 
+            "supplement": " ", 
+            "opCode": "MET", 
+            "attrs": [], 
+            "branch": "15", 
+            "operator": "Metro", 
+            "line": "15031", 
+            "dir": "H"
+          }, 
+          "desc": "City Centre - Forestside", 
+          "type": "5", 
+          "destID": "10006419"
+        }
+      }, 
+      {
+        "index": "5:2", 
+        "mode": {
+          "timetablePeriod": "01/09/2015 - 31/08/2016", 
+          "product": "Bus", 
+          "code": "3", 
+          "name": "Bus 512", 
+          "destination": "Raffrey, Church Corner", 
+          "number": "512", 
+          "diva": {
+            "stateless": "nir:13051:2:H:y14", 
+            "network": "nir", 
+            "project": "y14", 
+            "supplement": "2", 
+            "opCode": "ULB", 
+            "attrs": [], 
+            "branch": "13", 
+            "operator": "Ulsterbus", 
+            "line": "13051", 
+            "dir": "H"
+          }, 
+          "desc": "Belfast - Ballygowan - Raffrey", 
+          "type": "5", 
+          "destID": "10010514"
+        }
+      }, 
+      {
+        "index": "5:3", 
+        "mode": {
+          "timetablePeriod": "01/09/2015 - 30/06/2016", 
+          "product": "Bus", 
+          "code": "3", 
+          "name": "Bus 5A", 
+          "destination": "Braniel, Braniel", 
+          "number": "5A", 
+          "diva": {
+            "stateless": "nir:15005:A:H:mtt", 
+            "network": "nir", 
+            "project": "mtt", 
+            "supplement": "A", 
+            "opCode": "MET", 
+            "attrs": [], 
+            "branch": "15", 
+            "operator": "Metro", 
+            "line": "15005", 
+            "dir": "H"
+          }, 
+          "desc": "City Centre - Braniel", 
+          "type": "5", 
+          "destID": "10007686"
+        }
+      }
+    ]
+  }
+}

@@ -11,9 +11,6 @@ Their product known as Elektronische Fahrplanauskunft (EFA) provides an XML/JSON
 https://de.wikipedia.org/wiki/Elektronische_Fahrplanauskunft
 https://www.mentzdv.de
 
-It is very similar to the format used by the Transport for London (TfL) API documentation:
-http://content.tfl.gov.uk/journey-planner-api-documentation.pdf
-
 GTFS is the open General Transit Feed Specification, commonly used by google maps:
 https://github.com/google/transitfeed/wiki
 
@@ -32,12 +29,15 @@ https://code.google.com/p/openefa
 Golang client for EFA
 https://github.com/michiwend/goefa
 
+### API documentation
+
+http://data.linz.gv.at/katalog/linz_ag/linz_ag_linien/fahrplan/LINZ_AG_Linien_Schnitstelle_EFA_v7_Echtzeit.pdf
+http://content.tfl.gov.uk/journey-planner-api-documentation.pdf
+
 ### How to run
 
-1. ./get_stops.py 10000000 10013000
-2. ./get_routes.py
-3. [todo]
-4.
+1. ./load_data.py 10000000 10013000
+2. (Optional) ./create_map.py
 
 ### Progress
 

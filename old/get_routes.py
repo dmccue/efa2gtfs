@@ -55,7 +55,9 @@ def get_routesatstopid(input_id):
   response = requests.get('http://journeyplanner.translink.co.uk/android/XML_DM_REQUEST', params=payload).text.encode('utf-8')
   root = json.loads(response)
 
-  print json.dumps(root['servingLines']['lines'], sort_keys = False, indent = 2)
+  print json.dumps(root, sort_keys = False, indent = 2)
+  sys.exit(1)
+#  print json.dumps(root['servingLines']['lines'], sort_keys = False, indent = 2)
 
   if not root['servingLines']['lines']:
     return []

@@ -1734,3 +1734,871 @@
 131,Ballywalter
 59,Ballinderry Lower
 580,Leitrim (Newtownbutler)
+174,Botanic
+78,Ballydivity
+99046259,Tooban
+839,Tamlaght (Farnamullan)
+492,Helens Bay
+336,Derryscobe
+486,Gulladuff (Magherafelt)
+116,Ballynamore
+728,Pikestone
+372,Drumlea
+99024498,Glebe Large
+1,Tandragee
+1,Lisnaskea
+572,Laurelhill
+679,Mosside
+285,Craigs
+350,Downview
+599,Lisnarick
+689,Moy
+130,Ballyvoy
+399,Dunmurry
+165,Blackfort
+39,Ardstraw
+1,Killinchy
+200,Cappagh
+651,Metican
+848,Teeshan
+1,Kesh
+375,Drumnafivey
+150,Bellanaleck
+426,Four Winds
+144,Beechill
+268,Collone
+539,Killynure
+1,Comber
+894,Tynan
+249,Clandeboye
+621,Macosquin
+779,Scardans
+534,Killyclogher
+708,Newtownabbey
+698,New Buildings
+473,Gransha (Londonderry)
+230,Caw
+887,Tullynacross
+571,Larne
+490,Harpurs Hill
+479,Greenisland
+1,Dunloy
+836,Suffolk
+125,Ballysally
+500,Holywood
+829,Strandtown
+254,Clogher
+291,Crawfordsburn
+1,Irvinestown
+449,Glenfern
+1,Brookeborough
+10830004,Dundalk
+272,Connor
+849,Templemoyle
+743,Purdysburn
+533,Killybegs
+112,Ballynafeigh
+665,Milltown (Toomebridge)
+593,Lislap
+1,Aughafatten
+88,Ballyhackamore
+340,Doagh
+694,Moyle
+201,Cargan
+866,Roughfort
+121,Ballyreagh (Ballygawley)
+47,Ashfield
+632,Magheramorne
+563,Knocknagoney (Belfast)
+1,Carnlough
+248,Clanabogan
+96,Ballyknockan
+1,Dungiven
+165,Clady (Markethill)
+18,Andersonstown
+704,Newmills (Portadown)
+146,Belfast Harbour
+324,Darragh Cross
+296,Creggan (Crossmaglen)
+919,Whitesides Corner
+460,Gortaclare
+447,Glenavy
+381,Duffstown
+846,Tawnybrack
+378,Drumquin
+281,Craigavole
+210,Carnteel
+191,Bush
+570,Lambeg
+327,Derryadd
+774,Rubane
+1,Lurgan
+853,The Bawn
+754,Rathkenny
+1,Stewartstown
+212,Carrickfergus
+1,Cullybackey
+641,Maguiresbridge
+466,Gracehill (Armoy)
+582,Letterbreen (Drumlaghy One)
+386,Dundonald
+312,Cullion
+686,Mountsandel
+68,Ballybogey (Ballymoney)
+759,Richhill
+412,Eskragh (Clogher)
+757,Ravernet
+195,Caledon
+523,Killeen (Armagh)
+423,Fivemiletown
+785,Seaforde
+192,Bushmills
+189,Burnside (Ballyclare)
+470,Gransha (Intake)
+53,Ballagh Cross Roads
+234,Summerisland
+662,Milltown (Belfast)
+310,Culky
+496,Hillsborough
+1,Gortin
+242,Civiltown
+436,Garvaghey
+463,Gortnessy
+521,Killard
+1,Rosslea
+457,Glynn
+1,Markethill
+625,Maghera (Maghera)
+371,Drumkeeragh
+1,Burnside (Antrim)
+67,Ballybogey (Ballybogy)
+736,Portballintrae
+45,Artikelly
+202,Carland
+335,Derryork
+752,Rathenraw
+655,Millbrook
+72,Ballycastle
+243,Clabby
+1,Castledawson
+38,Ardshankill
+328,Derryboye
+1,Coagh
+772,Rostrevor
+683,Mount Pleasant
+885,Tullymacarath
+484,Guiness
+844,Tattyreagh Glebe
+229,Cavehill
+814,Springtown
+834,Strathfoyle
+896,Umgola
+227,Castleward
+862,The Six Towns
+318,Cultra
+392,Dungormley
+902,Victoria Bridge
+897,University Campus
+373,Grange
+787,Seahill
+663,Milltown (Portadown)
+780,Scarva
+763,Riverside
+540,Killyrammer
+205,Castleblayney
+320,Curr
+9,Ahoghill
+1,Ballynure
+383,Dunadry
+10822098,Dublin City
+316,Culmore
+102,Ballymacrea
+338,Dervock
+589,Liscolman (Amoy)
+154,Bellevue
+871,Tonduff
+863,The Skerries
+10854052,Carrickmacross
+478,Greencastle (Newtownabbey)
+701,Newmill
+1,Kells
+370,Drumintee
+92,Ballyholme
+634,Magheraveely (Enniskillen)
+382,Dullaghan
+618,Lurganare
+628,Magheragall
+662,Annaclone
+799,Six Road Ends
+760,Ringboy
+10854023,Smithborough
+594,Lislea
+126,Ballysillan
+62,Ballintoy
+886,Tullymurry
+588,Lisburn
+434,Garryduff
+107,Ballymarlagh
+346,Donaghmore
+347,Douglas Bridge
+918,Whiterocks
+891,Tullyverry
+471,Gransha (Belfast)
+175,Bovevagh
+483,Groomsport
+520,Killaney
+308,Crumlin
+559,Knockmenagh
+825,Straid (Ballymena)
+19,Annacloy
+221,Castlecaulfield
+218,Carthall
+120,Ballypatrick
+536,Killykergan
+789,Seskinore
+867,The Village
+784,Seacon
+352,Dreen
+495,Hillhead
+10824005,Balbriggan
+442,Glasswater
+877,Tullyhogue
+420,Fintona
+156,Belmont
+349,Downpatrick
+631,Magheramason
+160,Benone
+865,The Temple
+113,Ballynagard
+802,Skegoneill
+1,Belleek
+1,Cushendun
+895,Tyrella
+568,Laghey Corner
+699,New Ferry
+653,Milford
+1,Killylea
+1,Rasharkin
+90,Ballyhagan
+358,Drumalig
+912,Whitehead
+446,Glenarm
+522,Killeavy
+6,Aghanloo
+172,Boho
+691,Moyallan
+138,Banbridge
+832,Stranmillis
+15,Altmover
+855,The Boulevard
+122,Ballyreagh (Tempo)
+23,Annahilt
+766,Rosemount
+10853058,Bridge End
+838,Sydenham
+10830035,Ardee
+707,Newtown Crommelin
+740,Poyntzpass
+909,Waterside
+348,Downhill
+12,Allistragh
+302,Cross
+693,Moygashel
+99028615,Kilderry
+828,Stralongford
+738,Portrush
+827,Straidarran
+810,Springfield (Enniskillen)
+385,Duncrue
+783,Scribbagh
+1,Newtownstewart
+583,Letterbreen (Enniskillen)
+544,Kilraughts
+1,Ballyhornan
+450,Glengormley
+1,Belcoo
+791,Shankbridge
+314,Cullycapple
+803,Skerries
+164,Black's Lane
+601,Lisrodden
+1,Killyleagh
+864,The Spa
+815,Springwell Forest
+139,Bangor
+456,Glenwherry
+627,Magherafelt
+913,Whitehill
+319,Cunningburn
+137,Balnamore
+735,Portavogie
+250,Clare
+274,Conywarren
+252,Cliftonville
+394,Dunluce Castle
+474,Granville
+916,Whitehouse
+452,Glenoe
+237,Church Hill (Portadown)
+52,Baileysmill
+746,Raffrey
+61,Ballinderry
+16,Altnagelvin
+364,Drumcard
+1,Moira
+1,Loughgall
+661,Ballynaskeagh
+380,Drumsurn
+179,Bready
+1,Killough
+1,Tassagh
+343,Donaghadee
+153,Belleeks
+1,Warrenpoint
+257,Clonvaraghan
+143,Beardville Cross
+196,Callan Bridge
+481,Greyabbey
+719,Orangefield
+812,Springmartin
+472,Gransha (Islandmagee)
+1,Kilmore (Armagh)
+650,Meigh
+405,Eden
+567,Ladybrook
+359,Drumaness
+709,Newtownards
+266,Coleraine
+645,Martinstown
+648,Mayobridge
+498,Holywell
+325,Deerfin
+717,Oldpark
+81,Ballydullaghan
+554,Knock
+507,Jerrettspass
+1,Articlave
+276,Corbet
+637,Maghernahar
+744,Queens University
+769,Rosscor
+672,Moneymore
+414,Fairy Hill
+613,Loughmacrory
+11,Aldergrove
+705,Newport Trench
+646,Masteragwee
+603,Listooder
+499,Holywood Exchange
+925,Woodburn
+565,Lack
+1,Ardglass
+614,Lower Bracky
+193,Cabra
+596,Lisnadill
+685,Mountjoy
+398,Dunmoyle
+1,Coalisland
+561,Knockmoyle
+444,Glenanne
+441,Glasdrumman
+244,Clady (Ballymena)
+560,Knockmore
+670,Moneydig
+758,Reidstown
+881,Tullyardan
+914,Whitehouse Lower
+166,Blackwatertown
+323,Darkley
+104,Ballymagorry
+622,Maddan
+388,Dundrum
+765,Roscavey
+730,Poleglass
+294,Creevelough
+415,Falls
+365,Drumclay
+280,Craigantlet
+197,Camlough
+277,Corchoney Cross Roads
+642,Mallusk
+813,Springmount
+508,Jonesborough
+515,Kilclief
+616,Lower Ormeau
+194,Cairnshill
+640,Magilligan
+1,Tempo
+610,Loughguile
+136,Balmoral
+278,Corkey
+606,Derry~Londonderry
+46,Artrea
+489,Harmony Hill
+1,Ballymartin
+99,Ballylumford
+454,Glenross
+908,Waterfoot
+224,Castlereagh
+566,Lackagh
+1,Acton
+292,Creagh
+706,Newry
+341,Dollingstown
+64,Ballyalton
+76,Ballyculter
+293,Crebilly
+1,Mountfield
+223,Castlederg
+50,Augher
+491,Headwood
+517,Kilfennan
+214,Carrickmore
+419,Finnis
+163,Bishops Court
+529,Killowen
+860,The Rock
+232,Chapeltown (Antrim)
+168,Blaris
+681,Mount Eagles
+240,Belfast City Centre
+612,Loughinisland
+91,Ballyhalbert
+379,Drumshanbo-Glebe
+549,Kinallen
+279,Corranny
+135,Ballywillwill
+494,Hillhall
+267,Coles Hill
+10,Aird
+207,Carneatly
+99011820,Castlequarter
+417,Finaghy
+915,Whitehouse Upper
+809,Springfield (Belfast)
+820,Stonefort
+10824013,Skerries (Dublin)
+658,Millisle
+71,Ballycassidy
+545,Kilrea
+315,Cullyhanna
+659,Milltown (Ballygally)
+745,Raceview
+199,Cape Castle
+1,Crossmaglen
+917,Whiterock
+811,Springfield (Londonderry)
+1,Newtownhamilton
+768,Roseyards
+858,The Drones
+510,Katesbridge
+10830037,Drogheda Train Stn
+562,Knocknacarry
+840,Tamlaght
+1,Ballinderry Upper
+58,Ballinderry Bridge
+410,Eglish
+776,Sandholes
+1,Donaghcloney
+171,Bloomfield
+556,Knockcloghrim
+1,Gilford
+51,Aughnacloy
+10853059,Burnfoot
+44,Artigarvan
+416,Feeny
+741,Prehen Park
+1,Randalstown
+82,Ballyeaston
+40,Armagh
+190,Burren
+822,Stormont
+530,Killure
+1,Crossgar
+333,Derrymacash
+109,Ballymena
+700,Newcastle
+151,Bellany
+591,Liscolman (Bushmills)
+739,Portstewart
+356,Drumabest
+678,Moorfields
+654,Mill Loughan
+360,Drumard
+911,Whitecross
+624,Maghera (Castlewellan)
+892,Turf Lodge
+1,Kircubbin
+1,Drumahoe
+329,Derrycrin
+448,Glencairn
+231,Derry~Londonderry Centre
+477,Greencastle (Mountfield)
+656,Millburn
+115,Ballynameen
+395,Dunmore (Annalong)
+1,Derrylin
+861,The Sheddings
+467,Gracehill (Ballymena)
+337,Derrytrasna
+742,Priestland
+921,Willowfield (Belfast)
+429,Galdanagh
+27,Ardboe
+465,Gracefield
+246,Clady (Strabane)
+24,Annaloist
+57,Ballindarragh
+781,Scolboa
+339,Desertmartin
+859,The Heights
+1,Parkgate
+480,Greenmount
+326,Derriaghy
+431,Galwally
+1,Lisbellaw
+297,Creggan (Londonderry)
+1,Dromara
+854,The Birches
+721,Ormeau
+727,Pharis
+99043575,Skeoge Road
+795,Shrigley
+899,Upper Bracky
+857,The Cross
+823,Strabane
+1,Kilmore (Kilmore)
+169,Bleary
+1,Silverbridge
+551,Kingsmill
+1,Kilkeel
+458,Gobnascale
+158,Benburb
+453,Glenroan
+1,Saintfield
+377,Drumnasoo
+502,Inishrush
+671,Moneyglass
+98,Ballylintagh
+384,Dunamanagh
+421,Finvoy
+273,Conogher
+574,Laurelvale (Tandragee)
+869,Titanic Quarter
+910,Whiteabbey
+1,Annalong
+331,Derrykeighan
+22,Annaghmore (Portadown)
+777,Saul
+1,Ballygally
+1,Eglinton
+793,Shantallow
+1,Garrison
+132,Ballyward
+10853128,Buncrana
+831,Stranmillis Embankment
+623,Maghaberry
+134,Ballywillin
+532,Killybegs Upper
+1,Newtownbutler
+788,Seapatrick
+287,Cranagh
+924,Windyhall
+753,Rathfriland
+311,Cullaville
+702,Newmills (Coleraine)
+49,Aughamullan
+182,Bright
+602,Lissadell
+577,Legacurry
+129,Ballyvelton
+856,The Collon
+402,Dunseverick
+69,Ballycairn
+764,Rock
+542,Kilmore (Crossgar)
+366,Drumcree
+304,Crosskennan
+275,Cookstown
+390,Dungannon
+874,Toye
+1,Galbally
+1,Ballygowan
+36,Ardmore (Londonderry)
+1,Broughshane
+731,Pomeroy
+173,Boom Hall
+524,Killeen (Newry)
+1,Ballykelly
+826,Straid (Bushmills)
+852,Terrydremont
+1,Portadown
+1,Ederney
+635,Magheraveely (Newtownbutler)
+873,Toor
+406,Edendarriff
+162,Bessbrook
+180,Breagh
+241,Belfast City Hospital
+543,Kilmore (Portadown)
+833,Stranocum
+676,Monkstown
+259,Clough
+564,Knocknagoney (Holywood)
+882,Tullycarnet
+95,Ballykinler
+722,Park (Claudy)
+459,Goragh
+850,Templepatrick
+203,Carmavy
+1,Glarryford
+86,Ballygomartin
+253,Clogh
+688,Mowhan
+792,Shankill
+525,Killen
+547,Kilskeery
+664,Milltown (Sixmilecross)
+1,Trillick
+10852038,Cavan
+31,Ardkeen
+10824006,Dublin Airport
+1,Castlerock
+105,Ballymagrorty
+270,Coneyisland
+639,Maghery (Portadown)
+110,Ballymoney
+767,Rosetta
+157,Belvoir
+806,Somerset
+575,Lawrencetown (Craigavon)
+715,Nuns Quarter
+29,Ardess
+835,Struell
+1,Ballyronan
+1,Middletown
+439,Gilnahirk
+430,Galgorm
+159,Bendooragh
+298,Creggan (Sixmilecross)
+288,Cranfield
+619,Lurgantarry
+633,Magherasaul
+1,Cushendall
+437,Garvetagh
+697,Mullaghbawn
+247,Claggan
+7,Agherton
+660,Milltown (Ballymoney)
+289,Cranley
+903,Waringfield
+1,Armoy
+509,Jordanstown
+755,Rathsherry
+643,Malone
+674,Moneyreagh
+411,Enniskillen
+10854054,Clones
+604,Listullycurran
+761,Ringdufferin
+716,Nutts Corner
+749,Ranelly
+13,Altamullan
+487,Hamiltonsbawn
+1,Cloughey
+714,North Down
+501,Hyde Park
+889,Tullyroan
+106,Ballymaguigan
+900,Upper Malone
+70,Ballycarry
+363,Drumbo
+898,Upper Ballysillan
+396,Dunmore (Ballynahinch)
+710,Newtownbreda
+1,Draperstown
+890,Tullysaran
+675,Moneyslane
+1,Carryduff
+103,Ballymacrevan
+680,Mossley
+286,Craigywarren
+816,Sprucefield
+271,Conlig
+786,Seagoe
+485,Gulladuff (Maghera)
+608,Loughbrickland
+84,Ballygarvey
+117,Ballynashee House
+557,Knocklynn
+233,Chapeltown
+215,Carrowdore
+773,Rousky
+209,Carnmoney
+870,Tobermore
+497,Hilltown
+226,Castleroe
+751,Rathcoole
+28,Shinn
+245,Clady (Portglenone)
+97,Ballylesson
+111,Ballymurphy
+687,Mournebeg
+342,Donagh
+550,Kinawley
+879,Tullyallen
+3,Aghafatten
+127,Ballystrudder
+847,Teemore
+647,Maydown
+682,Mountnorris
+73,Ballyclare
+170,Bloody Bridge
+920,Widows Row
+526,Killeter
+124,Ballyroney
+443,Glastry
+493,Hilden
+1,Toomebridge
+782,Scollogstown
+451,Glenkeen
+1,Garvagh
+605,Loanends
+607,Loughan
+718,Omagh
+425,Fortwilliam
+906,Waringstown
+155,Bellway
+5,Aghalee
+309,Culcrow
+100,Ballymacarret
+1,Ballygawley
+305,Crosskeys
+354,Dromore (Down)
+407,Edenderry
+558,Knockmanoul
+790,Shandon
+649,Mazetown
+263,Coa
+427,Foyle Hill
+1,Portaferry
+14,Altamuskin
+362,Drumbeg
+295,Cregagh
+837,Swatragh
+8,Aghory
+376,Drumnakilly
+1,Claudy
+807,Spamount
+307,Crossnacreevy
+1,Kilroot
+845,Taughmonagh
+149,Bellahill
+690,Moyad
+374,Drummullan
+140,Bannvale
+611,Loughgilly
+283,Craigs Lower
+1,Glenariff
+101,Ballymaconnelly
+584,Ligoniel
+400,Dunnaval
+37,Ardoyne
+732,Pond Park House
+636,Maghercashel
+301,Cromkill
+282,Craigavon
+148,Bellaghy
+801,Duncairn
+1,Sixmilecross
+1,Magheralin
+355,Dromore (Tyrone)
+703,Newmills (Dungannon)
+880,Tullyally
+1,Derrygonnelly
+555,Knockbreda
+620,Macfinn Lower
+401,Dunnyvadden
+1,Cloughmills
+217,Carson Park
+80,Ballydugan
+35,Ardmore (Limavady)
+579,Leitrim (Castlewellan)
+798,Sion Mills
+475,Grasmere
+922,Willowfield (Coleraine)
+54,Ballee
+468,Grange Blundel
+725,Parkmore
+923,Windsor
+692,Moyarget
+4,Aghagallon
+535,Killycolpy
+118,Ballynoe
+1,Plumbridge
+569,Lagmore
+595,Lisnacree
+1,Islandmagee
+213,Carrickmannan
+99033546,Lisfannon
+553,Kirkistown
+726,Pennyburn
+20,Annadale
+422,Fish Loughan
+1,Killaloo
+926,Woodvale
+26,Antrim
+586,Lisbane
+1,Kilcoo
+720,Oritor
+10854044,Monaghan
+747,Raholp
+821,Stoneyford
+1,Ballinamallard
+181,Breandrum
+198,Campsie
+1,Upperlands
+1,Forkhill
+762,Ringsend
+876,Tullygarley
+581,Lenaderg
+361,Drumaroad
+177,Brandywell
+756,Ravenhill
+592,Lislane
+228,Castlewellan
+585,Limavady
+1,Keady
+669,Monea
+284,Craigs Upper
+255,Cloghoge
+114,Ballynahinch
+219,Castlecat
+142,Beaghmore
+1,Strangford
+404,Dyan
+403,Dunwish
+590,Liscolman (Ballymoney)
+178,Braniel
+161,Beragh
+239,Churchtown (Downpatrick)
+300,Crindle
+387,Dundrod
+258,Clooney Park
+42,Arney
+211,Carr
+818,Staffordstown
+548,Kilwaughter
+778,Scaddy
+1,Muckamore
+888,Tullynagee
+1,Portglenone
+1,Greysteel
+187,Bryansford
+262,Cloyfin
+893,Twinbrook
+464,Gowdystown
+488,Hannahstown
+131,Ballywalter
+59,Ballinderry Lower
+580,Leitrim (Newtownbutler)
