@@ -1,9 +1,13 @@
 # efa2gtfs
 
 
+### Map output
+
+https://imgur.com/a/2GSb6
+
 ### Description
 
-This is a project to extract GTFS data from MDV EFA
+This is a project to extract GTFS data from MDV's EFA
 
 MDV (Mentz Datenverarbeitung) is a german software company that makes transport and timetable software
 
