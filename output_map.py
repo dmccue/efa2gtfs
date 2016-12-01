@@ -1,5 +1,4 @@
-#!/usr/bin/python
-
+#!/usr/local/bin/python
 import sys, csv, random, sqlite3
 
 from lxml import etree
@@ -49,12 +48,18 @@ for i in cur:
         row = cur2.fetchone()
         coordinates.append([row['stop_lon'],row['stop_lat'],0])
 
+    snapUrl = "https://roads.googleapis.com/v1/snapToRoads?interpolate=true&key=AIzaSyADYWIGFSnn3DHlJblK0hntz5KQiwbD0hk&path="
+    pathstring = ""
+    for item in coordinates:
+        pathstring = pathstring + str(item[1]) + '%2C' + str(item[0]) + '%7C'
+    print snapUrl + pathstring.rstrip('%7C') + '-' +str(i['route_id'])
+    #print()
+    #print ""
+
     color_id = random.randint(1, COLOR_VARIATIONS)
-    #color_val = "%06xff" % random.randint(0, 0xFFFFFF)
     placemark = KML.Placemark(
         KML.name(i['route_id']),
-        KML.styleUrl("#linecolor"+str(color_id)),
-        #KML.Style(KML.Style(KML.color(color_val), KML.width(5))),
+        KML.styleUrl("#linecolor" + str(color_id)),
         KML.LineString(
             KML.coordinates(
                 ' '.join([str(item).strip('[]').replace(' ', '') for item in coordinates])
@@ -62,6 +67,14 @@ for i in cur:
         )
     )
     kmldoc.append(placemark)
+
+sys.exit(1)
+#print etree.tostring(etree.ElementTree(KML.kml(kmldoc)), pretty_print=True)
+
+
+
+
+
 
 
 
@@ -97,6 +110,5 @@ for i in cur:
 #         #print path_id, path_coords
 #         color_val = "#%06x" % random.randint(0, 0xFFFFFF)
 #         #mymap.addpath(path_coords, color_val)
-
-
-print etree.tostring(etree.ElementTree(KML.kml(kmldoc)), pretty_print=True)
+#KML.Style(KML.Style(KML.color(color_val), KML.width(5))),
+#color_val = "%06xff" % random.randint(0, 0xFFFFFF)

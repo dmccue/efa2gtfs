@@ -65,6 +65,7 @@ def get_route(baseurl,id):
         'type_dm': 'stop',
         'limit': '999999',
         'outputFormat': 'JSON',
+        #'coordListOutputFormat': 'STRING',
         'coordOutputFormat': 'WGS84',
         'language': 'en',
         'depType': 'stopEvents',
@@ -187,10 +188,9 @@ incrementer_limit = int(sys.argv[2])
 for i in range(incrementer, incrementer_limit):
     routes = get_route(Config.get('default','BaseURL'), i)
     try:
-        #print "Trying " + str(i)
         test = routes['dm']['points']['point']['ref']['coords']
     except TypeError:
-        print "Error! " + str(i)
+        print "\nError! " + str(i)
         continue
 
     db.execute('REPLACE INTO STOP VALUES (?,?,?,?,?,?,?,?)', process_stop(routes))
@@ -199,6 +199,10 @@ for i in range(incrementer, incrementer_limit):
     for route in process_routepath(routes):
         db.execute('REPLACE INTO ROUTE_PATH VALUES (?,?)', route)
     db.commit()
+    sys.stdout.write('.')
+    sys.stdout.flush()
+
+
 
 
 #print str(i), process_route(routes)

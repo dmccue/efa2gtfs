@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title></title>
+  <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+<div id='map_geo' class='map'> </div>
+<script>
+// http://lyzidiamond.com/posts/external-geojson-mapbox
+//var geojson = [];
+//var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(mapGeo);
+
+L.mapbox.accessToken = 'pk.eyJ1IjoiZG1jY3VlIiwiYSI6ImNpdzZ1c3ByMzAwNmwydG1rbHNvNmttZHoifQ.xnAZSt6jdESHYfmS4sD5CA';
+
+var mapGeo = L.mapbox.map('map_geo', 'mapbox.light')
+  .setView([54.5973, -5.9301], 9);
+
+var myLayer = L.mapbox.featureLayer()
+  .loadURL('mydata.geojson')
+  .on('ready', function() {
+    mapGeo.fitBounds(myLayer.getBounds());
+  })
+  .addTo(mapGeo);
+
+mapGeo.scrollWheelZoom.disable();
+
+</script>
+</body>
+</html>
