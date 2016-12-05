@@ -1,6 +1,5 @@
 #!/usr/bin/python
-import ConfigParser, sqlite3, sys, requests, json
-
+import ConfigParser, sqlite3, sys, requests, json, os, time, socket
 
 def show_help():
     print "Please provide a start and end id as arg1/arg2 to recreate db"
@@ -18,7 +17,6 @@ if not int(sys.argv[1]) or not int(sys.argv[2]):
 
 def init_db():
     db.row_factory = sqlite3.Row
-    #stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_station
     db.execute(
         "CREATE TABLE IF NOT EXISTS STOP ("
         "stop_id INTEGER PRIMARY KEY,"
@@ -31,7 +29,7 @@ def init_db():
         "parent_station INTEGER"
         ")"
     )
-    #route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+
     db.execute(
         "CREATE TABLE IF NOT EXISTS ROUTE ("
         "route_id TEXT PRIMARY KEY,"
@@ -75,21 +73,21 @@ def get_route(baseurl,id):
         #'useProxFootSearch': '0',
         #'useAllStops': '1',
         #'useRealtime': '0',
-        #     'mergeDep': '1',
-        #     'useAllStops': '1',
-        #     'maxTimeLoop': '1',
-        #     'canChangeMOT': '0',
-        #     'useRealtime': '1',
-        #     'imparedOptionsActive': '1',
-        #     'excludedMeans': 'checkbox',
-        #     'useProxFootSearch': '0',
-        #     'itOptionsActive': '1',
-        #     'trITMOTvalue100': '15',
-        #     'lineRestriction': '400',
-        #     'changeSpeed': 'normal',
-        #     'routeType': 'LEASTINTERCHANGE',
-        #     'ptOptionsActive': '1',
-        #     'snapHouseNum': '1'
+        #'mergeDep': '1',
+        #'useAllStops': '1',
+        #'maxTimeLoop': '1',
+        #'canChangeMOT': '0',
+        #'useRealtime': '1',
+        #'imparedOptionsActive': '1',
+        #'excludedMeans': 'checkbox',
+        #'useProxFootSearch': '0',
+        #'itOptionsActive': '1',
+        #'trITMOTvalue100': '15',
+        #'lineRestriction': '400',
+        #'changeSpeed': 'normal',
+        #'routeType': 'LEASTINTERCHANGE',
+        #'ptOptionsActive': '1',
+        #'snapHouseNum': '1'
     }
     response = requests.get(baseurl + 'XML_DM_REQUEST', params=payload).text.encode('utf-8')
     #print json.dumps(json.loads(response), sort_keys = False, indent = 2)
@@ -174,8 +172,18 @@ def process_routepath(root):
         stoplist.append(item['servingLine']['destID'])
         return_array.append([route_id, ",".join(stoplist)])
 
-    return return_array
+    #dedupe
+    return_array_dedupe = []
+    [return_array_dedupe.append(x) for x in return_array if x not in return_array_dedupe]
 
+    return return_array_dedupe
+
+
+# Check internet connectivity
+try:
+    socket.create_connection(("journeyplanner.translink.co.uk", 80))
+except OSError:
+    print "Error: No internet connectivity"
 
 # Main
 Config = ConfigParser.ConfigParser()
@@ -185,11 +193,38 @@ init_db()
 incrementer = int(sys.argv[1])
 incrementer_limit = int(sys.argv[2])
 
+# Create debug file
+epoch_val = str(int(time.time()))
+data_dir = "data/data_" + epoch_val
+if not os.path.exists(data_dir): os.makedirs(data_dir)
+data_file = open(data_dir + "/routes.txt", "w")
+
 for i in range(incrementer, incrementer_limit):
-    routes = get_route(Config.get('default','BaseURL'), i)
     try:
+        routes = get_route(Config.get('default','BaseURL'), i)
         test = routes['dm']['points']['point']['ref']['coords']
     except TypeError:
+        print "\nType Error! " + str(i)
+        continue
+    except ValueError:
+        print "\nValue Error! " + str(i)
+        continue
+
+    data_file.write("Incrementer: " + str(i) + "\n")
+    data_file.write(str(process_stop(routes)) + "\n")
+    for i in process_route(routes):
+        data_file.write(str(i))
+    for i in process_routepath(routes):
+        data_file.write(str(i))
+
+    try:
+        print "stop: "
+        print str(process_stop(routes))
+        print "routes: "
+        for i in process_route(routes): print str(i)
+        print "routepath: "
+        for i in process_routepath(routes): print str(i)
+    except:
         print "\nError! " + str(i)
         continue
 
@@ -202,7 +237,8 @@ for i in range(incrementer, incrementer_limit):
     sys.stdout.write('.')
     sys.stdout.flush()
 
-
+# Close debug file
+data_file.close()
 
 
 #print str(i), process_route(routes)

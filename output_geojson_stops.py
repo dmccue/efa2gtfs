@@ -5,7 +5,6 @@ import sys, csv, random, sqlite3, geojson, json
 db = sqlite3.connect('data/db.db')
 db.row_factory = sqlite3.Row
 cur = db.cursor()
-cur2 = db.cursor()
 
 output = []
 cur.execute("select * from stop")
@@ -16,4 +15,6 @@ for i in cur:
     output.append(obj_feature)
 
 #print json.dumps(output, indent=4, sort_keys=True)
+cur.close()
+db.close()
 print output
